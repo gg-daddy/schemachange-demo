@@ -31,10 +31,9 @@ change-history-table: 'TEST.SCHEMACHANGE.CHANGE_HISTORY'
 
 # Define values for the variables to replaced in change scripts
 vars:
-  var1: 'value1'
-  var2: 'value2'
+  var_test_name: 'name_created_by_var'
   secrets:
-    var3: 'value3' # This is considered a secret and will not be displayed in any output
+    public_key_str: 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmxQd77DHHSnZNH7VjqPMxNKpHxW/uxOjQhGRC8xzIjSkJA0m0WARggO3mdWRxX3EdzQfg2G3w3f6EEUD8KfSPcKdDmNoeoGgYz0YB1DDXjJzudOV7+nFOBqDKqohDKzh8k+MmGo7zhDG0gg/KJFlTS1lWmoakybpPHZAj2m0NvEyxBWF8v7ayYafyO1ymYpo6OYBlnyq5bJuKV8MHROs/0FluA/KQioutllFdjaxWbdqjCDJrJkf1s+kNAhHQptoaexdxcZbgw8KAlooflxZf1z9QsGnmzQ5Iv1nxwLKSiEonAW1ad8Y15Dnns3R6E8aIwym+1wChmrWJN9eFx0muwIDAQAB' # This is considered a secret and will not be displayed in any output
 
 # Create the change history schema and table, if they do not exist (the default is False)
 create-change-history-table: true

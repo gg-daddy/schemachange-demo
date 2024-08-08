@@ -1,0 +1,2 @@
+CREATE OR REPLACE USER SVC_ACCOUNT2
+RSA_PUBLIC_KEY = '{{secrets.public_key_str}}';
