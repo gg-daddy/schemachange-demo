@@ -1,0 +1,22 @@
+create or replace security integration my_security_integration_name
+  type = saml2
+  enabled = true
+  saml2_issuer = 'https://sts.windows.net/061b3d7e-34a9-4eae-b6fc-f869803fe1dd/'
+  saml2_sso_url = 'https://login.microsoftonline.com/061b3d7e-34a9-4eae-b6fc-f869803fe1dd/saml2'
+  saml2_provider = 'ADFS'
+  saml2_x509_cert = 'MIIC8DCCAdigAwIBAgIQfyt0PCfv6q9MCko/jyPCDjANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQD
+EylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNDA3MTUwOTQ1
+MzhaFw0yNzA3MTUwOTQ1MzhaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQg
+U1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9ejsPHMgcWQy
+ML3QlMQTKjtujmL49Nq7rbDD/qZeI6f7FxSvgd76CGz4+8hNyh51ahaXCXH16DY+6o2fc+ttKLLO
+p3J6mcdrNKYPJh94h/Xa8gttoPVNcLYBT/mBQsWEnBlOHtHnNFh9jvieEZM9vDppoi5wPBWpDJNw
+tNK7eHBPFs2au4E8BanYm+cvI0ig9x/nhoMTCrjsADfl+cVv6VOrX8tBt5JTIqVNDuDREmWWRsKY
+2oA6YaXQNxR4UJlut5PMK9Pe0iNiONXMSsZssxCHeis7b9ZsxhfkRMzVUi0S5D22EK0rfsgmlh9T
+kOPyG6/jEoTG9rzJiRzr6zsXqQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQDZjpYQJkzVfi6Con3P
+82YFY2fGE/npiy7sJoAD+F8Bgloxi9cjgMLNtUFQFGGAM19BDNqXgOpLeLwp0BFSV4s1Rs4GKLPW
+wWfVcLYEgxx5IwDawHqNXX4aa4JZ9ycf2XlDq+7mDl/A6xWz51V5rCC1kY8xIDfsp3Hq2aOWNP7L
+Mtjko6vndicaSLhvxaleEfQg0oO1WnhvCCl8A7NSO8SAhi6v7PvnhsgTf6I8Gm+OsjocEoEHkLDJ
+Q3ipZwQIUgZZ1TfCuBd/VRH/BCsT2ADndfh2FjclCKD4MtSTuv2+AvP1d2bJD2dl7fHExZmldybU
+LE7APmRQwC+OGWX1Y65p'
+  saml2_enable_sp_initiated = true -- set this to false if you don't want to make "login with SSO" button to appear on the login page immediately
+  saml2_post_logout_redirect_url = 'https://login.microsoftonline.com/common/wsfederation?wa=wsignout1.0';

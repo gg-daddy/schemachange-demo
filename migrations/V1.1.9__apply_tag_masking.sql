@@ -1,0 +1,2 @@
+ALTER TAG sample_database.sampleschema.tag_test
+SET MASKING POLICY sample_database.sampleschema.mask_test_data;

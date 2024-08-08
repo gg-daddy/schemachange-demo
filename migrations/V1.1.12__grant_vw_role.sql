@@ -1,0 +1,1 @@
+GRANT USAGE ON WAREHOUSE sample_warehouse TO ROLE my_role;

@@ -1,0 +1,9 @@
+-- Create a sample virtual warehouse
+CREATE WAREHOUSE sample_warehouse
+    WAREHOUSE_SIZE = 'X-SMALL'
+    AUTO_SUSPEND = 60
+    AUTO_RESUME = TRUE
+    MIN_CLUSTER_COUNT = 1
+    MAX_CLUSTER_COUNT = 5
+    SCALING_POLICY = 'STANDARD'
+    INITIALLY_SUSPENDED = FALSE;
