@@ -1,0 +1,1 @@
+CALL sample_database.sampleschema.insert_data_if_needed();
